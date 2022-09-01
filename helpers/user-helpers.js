@@ -365,7 +365,7 @@ instance.orders.create(options, function(err, order){
        },
        orderDetails:()=>{
         return new Promise(async(resolve,reject)=>{
-           let orderedItems=db.get().collection(collection.ORDER_COLLECTIONS).find().toArray()
+           let orderedItems=await db.get().collection(collection.ORDER_COLLECTIONS).find().toArray()
            resolve(orderedItems)
         })
 

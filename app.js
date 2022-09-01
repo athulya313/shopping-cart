@@ -5,8 +5,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var hbs=require('express-handlebars');
 var fileUpload=require('express-fileupload');
-var db=require('./config/connection')
+var db=require('./config/connection');
 var session=require('express-session');
+
 
 var userRouter = require('./routes/users');
 var adminRouter = require('./routes/admin');
